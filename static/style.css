@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+    width: 400px;
+}
+
+.categories button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.categories button:hover {
+    background: #4fc3f7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tools-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.tool-card img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card h2 {
+    margin: 15px 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.tool-card p {
+    color: #666;
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    input[type="text"] {
+        width: 250px;
+    }
+    .categories button {
+        padding: 8px 15px;
+    }
+    .tool-card {
+        width: 90%;
+        margin: 10px;
+    }
+}

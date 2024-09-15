@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ToolBox</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Find Your AI Tools</h1>
+            <p class="tagline">Explore the best AI tools for all your needs</p>
+            <input type="text" id="search" placeholder="Search AI tools..." oninput="filterTools()">
+            <div class="categories">
+                <button onclick="filterCategory('all')">All Categories</button>
+                <button onclick="filterCategory('image')">AI Image Generators</button>
+                <button onclick="filterCategory('art')">AI Art Generators</button>
+                <button onclick="filterCategory('text')">AI Text Generators</button>
+                <button onclick="filterCategory('audio')">AI Audio Generators</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="tools-section">
+        <div class="tool-card">
+            <img src="static/images/dall-e-3-best-ai-image-generators-2023-2.png" alt="AI Image Generator">
+            <h2>AI Image Generator</h2>
+            <a href="ai-image-generator.html">AI Image Generator</a>
+            <p>Create stunning images using AI.</p>
+        </div>
+        <div class="tool-card">
+            <img src="static/images/craiyon-best-ai-image-generators-2023.png" alt="AI Art Generator">
+            <h2>AI Art Generator</h2>
+            <a href="ai-art-generator.html">AI Art Generator</a>
+            <p>Generate amazing artwork with AI.</p>
+        </div>
+        <div class="tool-card">
+            <img src="static/images/image-51-31.jpg" alt="AI Text Generator">
+            <h2>AI Text to video Generator</h2>
+            <a href="ai-text-to-video.html">AI Text To Video</a>
+            <p>Generate video with simply text.</p>
+        </div>
+        <div class="tool-card">
+            <img src="static/images/OIP.jpeg" alt="AI Audio Generator">
+            <h2>AI Audio Generator</h2>
+            <a href="ai-audio-generator.html">AI Audio Generator</a>
+            <p>Produce high-quality audio with AI.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Toolbox</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

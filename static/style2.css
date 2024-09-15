@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Navigation Styling */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #4fc3f7;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.tools-description {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tools-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tools-description p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.tool-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Tool Cards Styling */
+.tool-card {
+    width: 30%;
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tool-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tool-card a {
+    display: inline-block;
+    background-color: #4fc3f7;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tool-card a:hover {
+    background-color: #0084c9;
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tool-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tool-card {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+}
